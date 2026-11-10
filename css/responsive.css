@@ -1,0 +1,307 @@
+/**
+ * VERDANTÉ — A Residence Apart
+ * Responsive Media Queries & Breakpoint Architecture
+ * Mobile-First & Target Breakpoints: 360px, 390px, 768px, 1024px, 1280px, 1440px
+ */
+
+/* ==========================================================================
+   1. Mobile-Specific Adjustments (< 768px)
+   ========================================================================== */
+@media (max-width: 767px) {
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .section-header {
+    margin-bottom: var(--space-5);
+  }
+
+  .container {
+    padding-left: clamp(1rem, 4vw, 1.5rem);
+    padding-right: clamp(1rem, 4vw, 1.5rem);
+  }
+
+  .hero {
+    min-height: 100svh;
+    padding-top: calc(var(--header-height) + var(--space-5));
+    padding-bottom: var(--space-8);
+  }
+
+  .hero__scroll {
+    display: none; /* Avoid visual collision with bottom controls on small mobile */
+  }
+
+  .header-actions .btn {
+    display: none; /* Hide header button on small phone to preserve room for wordmark & toggle */
+  }
+
+  .footer-nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 4px 0;
+  }
+
+  .footer-back-to-top {
+    min-height: 44px;
+    padding: 6px 0;
+  }
+}
+
+/* ==========================================================================
+   1b. Compact Phones & Small Devices (<= 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  .spec-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .spec-item dd {
+    text-align: left;
+  }
+
+  .footer-bottom-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* ==========================================================================
+   2. Small Tablets & Large Phones (>= 576px)
+   ========================================================================== */
+@media (min-width: 576px) {
+  .btn-group {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .btn-group .btn {
+    width: auto;
+  }
+
+  .hero__actions {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .hero__actions .btn {
+    width: auto;
+  }
+
+  .header-actions .btn {
+    display: inline-flex;
+    padding: 0.6rem 1.1rem;
+    font-size: 0.7rem;
+    min-height: 40px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-mosaic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   3. Tablets (>= 768px)
+   ========================================================================== */
+@media (min-width: 768px) {
+  :root {
+    --header-height: 84px;
+  }
+
+  .editorial-quote {
+    padding-left: var(--space-5);
+    margin: var(--space-6) 0;
+  }
+
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero__scroll {
+    display: flex;
+  }
+
+  .overview-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amenities-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   4. Desktop (>= 1024px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  :root {
+    --header-height: 88px;
+  }
+
+  .nav-desktop {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none !important;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .media-frame:hover img {
+    transform: scale(1.02);
+  }
+
+  .overview-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: var(--space-8);
+  }
+
+  .residence-row {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .residence-row--reverse .residence-media {
+    order: 2;
+  }
+
+  .residence-row--reverse .residence-content {
+    order: 1;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .gallery-mosaic {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5);
+  }
+
+  .gallery-item--wide-1 {
+    grid-column: span 2;
+  }
+
+  .gallery-item--wide-2 {
+    grid-column: span 2;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .connectivity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .enquiry-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: var(--space-8);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.3fr 0.8fr 1fr 0.9fr;
+    gap: var(--space-6);
+  }
+}
+
+/* ==========================================================================
+   Small Screens & Tablets Extra Rules
+   ========================================================================== */
+@media (min-width: 576px) and (max-width: 1023px) {
+  .connectivity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   5. Large Desktop (>= 1280px)
+   ========================================================================== */
+@media (min-width: 1280px) {
+  :root {
+    --header-height: 92px;
+  }
+
+  .hero__content {
+    max-width: 820px;
+  }
+}
+
+/* ==========================================================================
+   6. Ultra-Wide Displays (>= 1440px)
+   ========================================================================== */
+@media (min-width: 1440px) {
+  .container {
+    max-width: var(--container-max);
+  }
+}
+
+/* ==========================================================================
+   7. Print Stylesheet
+   ========================================================================== */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+
+  .skip-link,
+  .site-header,
+  .btn-group,
+  .site-footer,
+  .hero__scroll,
+  .menu-toggle,
+  .mobile-nav {
+    display: none !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  h1, h2, h3 {
+    color: #000000 !important;
+    page-break-after: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+}

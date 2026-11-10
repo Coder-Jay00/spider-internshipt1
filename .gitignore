@@ -1,0 +1,21 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Editor & IDE Directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build / Scratch artifacts
+scratch/
+*.log
+*.tmp
+
+# Dependency directories (if any tools are run)
+node_modules/
+package-lock.json
+
