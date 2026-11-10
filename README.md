@@ -2,6 +2,10 @@
 
 A responsive, high-end residential real estate project website developed for a fictional luxury development concept, adhering strictly to the specifications of the **Website Developer Intern practical assignment**.
 
+- **Author / Developer:** Coder-Jay00
+- **Email:** coderjt25@gmail.com
+- **Assignment:** Technical Assignment — Task 1 (Website Developer Intern)
+
 ---
 
 ## 1. Project Overview
@@ -272,8 +276,10 @@ The `screenshots/final/` directory contains 17 authentic high-resolution screens
 
 ---
 
-## 11. Final Project Status
+## 11. Final Project Status & Submission Details
 
+- **Author / Developer:** Coder-Jay00
+- **Email:** coderjt25@gmail.com
 - **Front-End Demonstration:** **Complete & Fully Verified**
 - **Assignment Practical Criteria:** **100% Satisfied**
 - **Commercial Details & Backend Integration:** **Not Supplied (Fictional Demonstration Scope)**

@@ -2,6 +2,8 @@
 
 **Project:** VERDANTÉ — A Residence Apart  
 **Assignment:** Website Developer Intern Practical Assignment (Task 1)  
+**Author / Developer:** Coder-Jay00  
+**Email:** coderjt25@gmail.com  
 **Verification Date:** 10 November 2026  
 **Final Delivery Status:** Complete & Fully Verified  
 
